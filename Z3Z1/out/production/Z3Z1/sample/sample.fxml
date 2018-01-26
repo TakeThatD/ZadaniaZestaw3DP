@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="249.0" prefWidth="355.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" layoutX="224.0" layoutY="77.0" spacing="10.0">
+               <children>
+                  <Label text="Output Scale" />
+                  <RadioButton fx:id="outputCelcius" mnemonicParsing="false" onAction="#pressButton" text="Celcius">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="outputScale" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="outputFahrenheit" mnemonicParsing="false" onAction="#pressButton" text="Fahrenheit" toggleGroup="$outputScale" />
+                  <RadioButton fx:id="outputKelvin" mnemonicParsing="false" onAction="#pressButton" text="Kelvin" toggleGroup="$outputScale" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" layoutX="41.0" layoutY="77.0" spacing="10.0">
+               <children>
+                  <Label text="Input Scale" />
+                  <RadioButton fx:id="inputCelcius" mnemonicParsing="false" onAction="#pressButton" selected="true" text="Celcius">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="inputScale" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="inputFahrenheit" mnemonicParsing="false" onAction="#pressButton" text="Fahrenheit" toggleGroup="$inputScale" />
+                  <RadioButton fx:id="inputKelvin" mnemonicParsing="false" onAction="#pressButton" text="Kelvin" toggleGroup="$inputScale" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="85.0" layoutY="27.0" spacing="5.0">
+               <children>
+                  <Label text="Input" />
+                  <TextField fx:id="inputTextField" onAction="#pressButton" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="80.0" layoutY="196.0" spacing="5.0">
+               <children>
+                  <Label text="Output" />
+                  <TextField fx:id="outputTextField" onAction="#pressButton" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

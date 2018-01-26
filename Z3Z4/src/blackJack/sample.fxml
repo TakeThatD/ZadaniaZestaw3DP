@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blackJack.Game">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <SplitPane dividerPositions="0.7008032128514057" prefHeight="400.0" prefWidth="500.0">
+         <items>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox fx:id="croupierCards" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <StackPane fx:id="c1" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label>
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </StackPane>
+                        <StackPane fx:id="c2" layoutX="83.0" layoutY="5.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="c3" layoutX="186.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="c4" layoutX="244.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="c5" layoutX="274.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="c6" layoutX="290.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label text="Stawka">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="playerBidField" alignment="CENTER" editable="false">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children></HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="383.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="bidButton50" mnemonicParsing="false" onAction="#bidButtonPressed50" text="+50$" />
+                        <Button fx:id="bidButton100" mnemonicParsing="false" onAction="#bidButtonPressed100" text="+100$" />
+                        <Button fx:id="bidButton200" mnemonicParsing="false" onAction="#bidButtonPressed200" text="+200$" />
+                        <Button fx:id="bidButton500" mnemonicParsing="false" onAction="#bidButtonPressed500" text="+500$" />
+                        <Button fx:id="bidButton1000" mnemonicParsing="false" onAction="#bidButtonPressed1000" text="+1000$" />
+                        <Button fx:id="bidButton5000" mnemonicParsing="false" onAction="#bidButtonPressed5000" text="+5000$" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="bidDoneButton" mnemonicParsing="false" onAction="#bidDoneButtonPressed" prefWidth="200.0" text="Gotowe!">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <GridPane hgap="5.0" layoutX="10.0" layoutY="170.0" vgap="5.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="hitButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hitButtonPressed" style="-fx-background-color: rgba(00,250,0);" text="HIT" />
+                        <Button fx:id="standButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#standButtonPressed" style="-fx-background-color: rgba(250,150,150);" text="STAND" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets top="5.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Button fx:id="doubleDownButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#doubleDownButtonPressed" style="-fx-background-color: rgba(250,150,100);" text="DOUBLE DOWN">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <HBox fx:id="playerCards1" alignment="TOP_CENTER" layoutX="10.0" layoutY="-5.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <StackPane fx:id="c1" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </StackPane>
+                        <StackPane fx:id="c2" layoutX="83.0" layoutY="5.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="c3" layoutX="186.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="c4" layoutX="244.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="c5" layoutX="274.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="c6" layoutX="290.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle accessibleText="asd" arcHeight="5.0" arcWidth="5.0" fill="#1fbcff00" height="70.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Label text="">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets right="-30.0" top="-50.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets bottom="-50.0" left="-30.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Label text="21" textAlignment="CENTER" textFill="RED" wrapText="true">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+                  <Label text="Black Jack">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Label text="Portfel">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="playerCashField" alignment="CENTER" editable="false" />
+                  <Line endX="100.0" layoutX="34.0" layoutY="137.0">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Line>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></VBox>
+         </items>
+      </SplitPane>
+   </children>
+</GridPane>
